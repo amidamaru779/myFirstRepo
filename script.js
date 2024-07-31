@@ -5,3 +5,4 @@ const rollback = 1
 const fullPrice = 1
 const adaptive = 1
 alert("Привет преподаватель :)")
+console.log("Хорошего дня!");
