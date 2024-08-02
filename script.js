@@ -1,8 +1,8 @@
-const title = 1
-const screens = 1
-const screenPrice = 1 
-const rollback = 1
-const fullPrice = 1
-const adaptive = 1
-alert("Привет преподаватель :)")
-console.log("Хорошего дня!");
+let title = "My first project on Java Script."
+let screens = 1
+let screenPrice = 1 
+let rollback = 1
+let fullPrice = 1
+let adaptive = 1
+
+console.log();
