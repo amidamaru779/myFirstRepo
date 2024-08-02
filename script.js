@@ -12,5 +12,11 @@ let adaptive = true
 // булевое значение
 
 console.log(typeof title);
+// вывел значение переменной (str)
 console.log(typeof fullPrice);
+// вывел значение переменной (num)
 console.log(typeof adaptive);
+// вывел значение переменной (boolean)
+
+console.log(screens.length);
+// вывел в консоль длину строки переменной
