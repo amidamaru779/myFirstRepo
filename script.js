@@ -30,3 +30,5 @@ screens = screens.split(" ")
 // сделал массив из строки
 console.log(screens);
 // вывод массива в нижнем регистре
+
+console.log(fullPrice * (rollback/100));
