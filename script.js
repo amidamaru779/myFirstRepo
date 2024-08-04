@@ -26,7 +26,7 @@ console.log("Стоимость верстки экранов", screenPrice, "р
 
 screens = screens.toLowerCase()
 // поменял всю строку в нижний регистр
-screens = screens.split(" ")
+screens = screens.split(", ")
 // сделал массив из строки
 console.log(screens);
 // вывод массива в нижнем регистре
