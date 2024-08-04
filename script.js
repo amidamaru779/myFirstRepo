@@ -28,3 +28,5 @@ console.log(screens);
 
 console.log(fullPrice * (rollback/100));
 
+alert("Привет преподаватель :)")
+console.log("Хорошего дня!");
