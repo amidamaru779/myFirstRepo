@@ -1,6 +1,5 @@
 'use strict';
 
-// задаём вопросы пользователю о проекте
 let title = prompt("Как называется ваш проект?")
 let screens = prompt("Какие типы экранов нужно разработать?", "Простые, Сложные, Интерактивные")
 let screenPrice = +prompt("Сколько будет стоить данная работа?",  "12000")
@@ -13,11 +12,11 @@ let rollback = 95
 let fullPrice 
 let servicePercentPrice  
 let allServicePrices
+
 const showTypeOf = function(variable) {
     console.log(variable, typeof variable);
     
 }
-
 
 const getAllServicePrices = function() {
     return servicePrice1 + servicePrice2
@@ -59,8 +58,11 @@ servicePercentPrice = getServicePercentPrices()
 showTypeOf(title)
 showTypeOf(fullPrice)
 showTypeOf(adaptive)
-console.log(screens);
 
+screens = screens.toLowerCase()
+screens = screens.split(", ")
+console.log(screens);
+console.log(getServicePercentPrices(servicePercentPrice));
 console.log(getRollbackMessage(fullPrice));
 console.log("Стоимость верстки экранов", screenPrice, "рублей/долларов/гривен/юани \n"+"Стоимость разработки сайта",fullPrice,"рублей/долларов/гривен/юани"); 
  
