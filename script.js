@@ -60,7 +60,7 @@ const getRollbackMessage = function(price) {
 const  getTitle = function() {
     title = title.trim();
     title = title.charAt(0).toUpperCase() + title.slice(1).toLowerCase();
-    return title
+    return 
 }
 
 function getServicePercentPrices() {
