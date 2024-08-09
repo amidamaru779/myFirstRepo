@@ -62,7 +62,7 @@ showTypeOf(adaptive)
 screens = screens.toLowerCase()
 screens = screens.split(", ")
 console.log(screens);
-console.log(getServicePercentPrices(servicePercentPrice));
+console.log(servicePercentPrice);
 console.log(getRollbackMessage(fullPrice));
 console.log("Стоимость верстки экранов", screenPrice, "рублей/долларов/гривен/юани \n"+"Стоимость разработки сайта",fullPrice,"рублей/долларов/гривен/юани"); 
  
