@@ -13,24 +13,6 @@ let fullPrice
 let servicePercentPrice  
 let allServicePrices
 
-<<<<<<< HEAD
-
-if (fullPrice > 30000) {
-    console.log("Даем скидку в 10%");
-} else if (15000 <= fullPrice && fullPrice <= 30000) {
-    console.log("Даем скидку в 5%");
-} else if (15000 > fullPrice && fullPrice > 0) {
-    console.log("Скидка не предусмотрена");
-} else if (fullPrice <= 0) {
-    console.log("Что-то пошло не так");
-}
-
-console.log(fullPrice);
-console.log((servicePercentPrice));
-
-console.log("Стоимость верстки экранов", screenPrice, "рублей/долларов/гривен/юани \n"+"Стоимость разработки сайта",fullPrice,"рублей/долларов/гривен/юани"
- ); 
-=======
 const showTypeOf = function(variable) {
     console.log(variable, typeof variable);
     
@@ -77,7 +59,6 @@ showTypeOf(title)
 showTypeOf(fullPrice)
 showTypeOf(adaptive)
 
->>>>>>> lesson04
 screens = screens.toLowerCase()
 screens = screens.split(", ")
 console.log(screens);
