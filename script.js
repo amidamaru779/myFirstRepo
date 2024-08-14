@@ -30,7 +30,7 @@ const asking = function() {
 
 const getAllServicePrices = function() {
     let sum = 0
-
+    let price 
     for (let i = 0; i < 2; i++) {
 
         if (i === 0){
@@ -39,10 +39,11 @@ const getAllServicePrices = function() {
             service2 = prompt("Какой дополнительный тип услуги нужен?")
         }
         
-        while (!isNumber(sum)){
-            sum = prompt("Сколько это будет стоить?")
-        } 
-        sum += +prompt("Сколько это будет стоить?")
+        do {
+            price = prompt("Сколько это будет стоить?")
+        } while (!isNumber(price))
+        
+        sum += +price
     }    
     
     return sum
@@ -55,7 +56,7 @@ const showTypeOf = function(variable) {
 }
 
 function getFullPrice() {
-    return  Number(screenPrice) + allServicePrices 
+    return  +screenPrice + allServicePrices 
 }
 
 const getRollbackMessage = function(price) {
