@@ -20,7 +20,6 @@ const asking = function() {
     title = prompt("Как называется ваш проект?");
     screens = prompt("Какие типы экранов нужно разработать?", "Простые, Сложные, Интерактивные");
     
-    screenPrice = prompt("Сколько будет стоить данная работа?");
     do{
         screenPrice = prompt("Сколько будет стоить данная работа?");
     } while (!isNumber(screenPrice))
