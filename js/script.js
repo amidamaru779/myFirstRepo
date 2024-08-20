@@ -1,5 +1,5 @@
 'use strict';
-
+аолывраолыв
 const appData = {
     title: '',
     screens: [], 
