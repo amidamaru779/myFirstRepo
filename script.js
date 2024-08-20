@@ -88,7 +88,7 @@ const appData = {
         }
     },
     getTitle: function() {
-        appData.title = appData.title.trim() + appData.title.charAt(0).toUpperCase() + appData.title.slice(1).toLowerCase(); 
+        appData.title = appData.title.trim()[0].toUpperCase() + appData.title.trim().slice(1).toLowerCase(); 
     },
     getServicePercentPrices: function() {
         appData.servicePercentPrice = Math.ceil(appData.fullPrice-(appData.fullPrice*(appData.rollback/100)))
