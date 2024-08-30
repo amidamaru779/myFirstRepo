@@ -128,7 +128,7 @@ const appData = {
         
         screens[screens.length - 1].after(cloneScreen)
         
-    },    
+    },
     
     addPrices: function (){
         for (let screen of appData.screens){
