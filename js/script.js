@@ -57,9 +57,7 @@ const appData = {
             this.addPrices()
             this.showResult()
             this.disableFunc()
-            console.log(appData);
-
-
+            console.log(this);
         }
         //appData.logger()  
     },
@@ -78,7 +76,7 @@ const appData = {
     showResult: function () {
         total.value = this.screenPrice
         totalCount.value = this.countScreens
-        totalCountOther.value = this.servicePricesPercent + appData.servicePricesNumber
+        totalCountOther.value = this.servicePricesPercent + this.servicePricesNumber
         totalFullCount.value = this.fullPrice
         totalCountRollback.value = this.servicePercentPrice
     },
@@ -169,8 +167,6 @@ const appData = {
         this.unlockBoards()
         this.clearInputs()
         this.deleteBlock()
-        this.deletePercentBlock()
-        this.deleteNumberBlock()
         this.clearValue()
     },
     // блок методов для reset
@@ -185,6 +181,7 @@ const appData = {
         this.servicePercentPrice = 0
         this.servicePricesPercent = 0
         this.servicePricesNumber = 0
+        console.log(this);
     },
     clearInputs: function () {
         screens = document.querySelectorAll('.screen');
@@ -192,22 +189,6 @@ const appData = {
             const select = screen.querySelector('select');
             const input = screen.querySelector('input');
             select.value = '';
-            input.value = '';
-        });
-    },
-    deletePercentBlock: function () {
-        otherItemsPercent.forEach((item) => {
-            const check = item.querySelector('input[type=checkbox]');
-            const input = item.querySelector('input[type=text]');
-            check.checked = false;
-            input.value = '';
-        });
-    },
-    deleteNumberBlock: function () {
-        otherItemsNumber.forEach((item) => {
-            const check = item.querySelector('input[type=checkbox]');
-            const input = item.querySelector('input[type=text]');
-            check.checked = false;
             input.value = '';
         });
     },
