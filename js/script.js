@@ -154,7 +154,7 @@ const appData = {
             const input = screen.querySelector('input')
             select.disabled = true
             input.disabled = true
-            handlerBtnReset.style = "display: inline"
+            handlerBtnReset.style = "display: flex"
             handlerBtnStart.style = "display: none"
         })
     },
@@ -237,7 +237,7 @@ const appData = {
             select.disabled = false
             input.disabled = false
             handlerBtnReset.style = "display: none"
-            handlerBtnStart.style = "display: inline"
+            handlerBtnStart.style = "display: flex"
         })
     },
 }
